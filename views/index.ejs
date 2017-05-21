@@ -3,12 +3,12 @@
 <head>
 <title>G7 Shopping Site - Home</title>
 <link rel="icon" href="images/logo.png">
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
 <!--theme style-->
-<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/jquery-migrate-3.0.0.min.js"></script>
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--//theme style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/memenu.js"></script>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>	
 <!-- Social buttons -->
- <script src="https://apis.google.com/js/platform.js" async defer></script>
+ <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+//<![CDATA[
+{ "parsetags": "explicit" }
+//]]>
+</script>
+ <script type="text/javascript" src="js/footerSocialButtons.js"></script>
 <!-- /start menu -->
 </head>
 <body> 
@@ -344,17 +349,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <p>© 2017 Group 7 Shopping Site. All Rights Reserved | Template <b>Lighting</b> designed by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 		 </div>
 		 <div class="social">
-			<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-
-			<div class="fb-like" data-href="http://127.0.0.1:3000" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-			<div class="g-plusone" data-size="small"></div>
+		 	
 		 </div>
 		 <div class="clearfix"></div>
 	 </div>
