@@ -1,0 +1,35 @@
+#container ul { list-style: none; }
+
+#container .list li { 
+	width: 100%;
+	 border-bottom: 2px dotted #CCC; 
+	 margin-bottom: 10px; 
+	 overflow-wrap: break-word;
+	 padding-bottom: 10px;
+	 background-color: #FFFCB3;
+	 padding:3px;
+
+	  }
+#container h2{
+	color :#ff960a;
+}
+#container li a {
+	text-decoration: none;
+	
+}
+
+#container{
+
+	margin-right: 5%;
+}
+
+#container  .list .current{
+	color:#ff960a;
+	background-color: 	#f0f8ff;
+	font-weight: bold;
+	border-bottom:  2px solid #03899c;
+}
+
+#container .button{
+	
+}

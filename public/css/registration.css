@@ -1,0 +1,29 @@
+.cont{
+	margin-right: 10%;
+	margin-left: 10%;
+	background-color:#e6f3f7;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border: 1px solid #3417F0;
+}
+
+.form_res{
+		margin-top: 3em;
+	  margin-left: 10%;
+	  margin-right: 10%;
+}
+
+.cont h2{
+	margin-left: 20%;
+  margin-top: 1em;
+  color :#ff960a;
+}
+.cont .bread{
+  background-color: #ECE5E5;
+   list-style-type: none;
+   padding: 5px;
+}
+.cont .bread li{
+ display: inline;
+}

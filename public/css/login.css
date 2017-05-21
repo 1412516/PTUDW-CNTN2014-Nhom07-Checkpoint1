@@ -1,0 +1,51 @@
+
+.form_login{
+  margin-top: 3em;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.log form input[type="submit"]:hover,a.acount-btn:hover{
+  background:#ff5d46;
+  color:#fff;
+  text-decoration:none;
+}
+
+.cont h2{
+  margin-left: 20%;
+ 
+  color :#ff960a;
+
+}
+
+.button{
+  margin-left: 10%;
+}
+
+
+.cont{
+  margin-top: 3em;
+  background-color: white;
+  margin-right: 40%;
+  margin-bottom: 3em;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: -1px;
+  padding-bottom: 20px;
+  background-color:#e6f3f7;
+  border: 1px solid #3417F0;
+}
+
+body{
+  
+}
+
+.cont .bread{
+  background-color: #ECE5E5;
+   list-style-type: none;
+   padding: 5px;
+}
+.cont .bread li{
+ display: inline;
+}

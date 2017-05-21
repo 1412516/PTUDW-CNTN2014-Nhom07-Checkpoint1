@@ -1,0 +1,84 @@
+body{
+  margin: 0;
+  height: auto;
+  width: auto;
+}
+
+#container h2{
+	color :#ff960a;
+	margin-bottom: 1em;
+}
+#container{
+	
+	
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+#container ul { list-style: none; }
+#container .buttons { margin-bottom: 20px; }
+
+#container .list li { 
+	width: 100%;
+	 border-bottom: 2px dotted #CCC; 
+	 margin-bottom: 10px; 
+	 overflow-wrap: break-word;
+	 padding-bottom: 10px; }
+
+
+
+#container .grid li { 
+	
+	float: left;
+	
+	border-right:  1px dotted #CCC;
+	border-top:  1px dotted #CCC;
+	overflow-wrap: break-word;
+	border-left:  1px dotted #CCC;
+	border-bottom: 2px dotted #CCC;
+   	padding: 20px; 
+   
+}
+#container .grid .Edit{
+	margin-left: 20%;
+}
+
+#container .grid .delete{
+	margin-left: 20px;
+}
+
+#container  .list .current{
+	color:#ff960a;
+	background-color: 	#f0f8ff;
+	font-weight: bold;
+	border-bottom:  2px solid #03899c;
+}
+
+
+#container  .grid .current{
+	color:#ff960a;
+	background-color: 	#f0f8ff;
+	font-weight: bold;
+	border-bottom:  2px solid #03899c;
+}
+
+#container #item img{
+	width:190px;
+	height: 150px;
+}
+
+#container .list img{
+	width: 10%;
+	height: 100px;
+}
+
+
+#container .grid img{
+	margin-left: 25%;
+	width: 50%;
+	height: 100px;
+	margin-bottom: 2px;
+}
+
+#footer{
+	background-color: grey;
+}
