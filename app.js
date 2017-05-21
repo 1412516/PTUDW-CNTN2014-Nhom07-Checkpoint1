@@ -81,6 +81,14 @@ app.get('/transactionhistory.html',function(req, res){
 	res.render('transactionhistory');
 });
 
+app.get('/ManageOrder.html',function(req, res){
+	res.render('ManageOrder');
+});
+
+app.get('/adminproduct.html',function(req, res){
+	res.render('admin');
+});
+
 app.get('/grossrevenue.html',function(req, res){
 	res.render('grossrevenue');
 });
