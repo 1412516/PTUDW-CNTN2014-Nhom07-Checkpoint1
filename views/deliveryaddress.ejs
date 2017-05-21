@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>G7 Ltd.Company</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/address.css">
+	<script src="js/countries.js"></script>
+	
+</head>
+<body>
+<div id="container">	
+	<div class="header">
+		<div class="row">
+			<div class="col-sm-10">
+				<div class="contact">
+					<a href="admin.html"><img id="slogan" src="images/slogan.png" alt="G7 Slogan"></a>
+					<img id="inforimg" src="images/call.jpg" alt="Call">
+					<div class="text-left infor">
+						<p>1900-6666</p>
+						<p>8 AM - 21 PM, Friday &amp; Sunday </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<div class="bd">
+		<form class="form_add form-horizontal">
+			<div class="form-group">
+          		<label class="control-label col-sm-2" >Full name:</label>
+          		<div class="col-sm-10">
+           		 <input type="text" class="form-control" id="product_name" placeholder="Enter full name" required>
+          		</div>
+        	</div>	
+        	<div class="form-group">
+          		<label class="control-label col-sm-2" >Phone number:</label>
+          		<div class="col-sm-10">
+           		 <input type="text" class="form-control" id="product_name" placeholder="Enter phone number">
+          		</div>
+        	</div>	
+        	<div class="form-group">
+          		<label class="control-label col-sm-2" >Email:</label>
+          		<div class="col-sm-10">
+           		 <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          		</div>
+        	</div>	
+        	<div class="form-group">
+        		<script type= "text/javascript" src = "countries.js"></script>
+        		<label class="control-label col-sm-2" >Select Country (with states): </label>
+				<div class="col-sm-10">	
+					<select id="country" name ="country"></select> <br> <br> <br>
+				</div>
+				<label class="control-label col-sm-2" >Select State: </label>
+				<div class="col-sm-10">	
+					 <select name ="state" id ="state"></select> <br> <br> 
+				</div> 
+				<script language="javascript">
+					populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+					populateCountries("country2");
+					populateCountries("country2");
+				</script>
+
+        	</div>
+        	
+        	<div class="form-group">
+          		<label class="control-label col-sm-2" >Number address, Street:</label>
+          		<div class="col-sm-10">
+           			<input type="text" size="40" class="form-control" id="product_name" placeholder="Enter address street.    Ex: 5th Le  Loi Street, District 1">
+          		</div>
+        	</div>	
+        	<div class="form-group">
+        		<label class="control-label col-sm-2">Type address:</label>
+		  	    <div class="radio-inline">
+		  	      <label><input type="radio" name="radio" value="idadd">Home/Apartment</label>
+		  	    </div>
+		  	    <div class="radio-inline">
+		  	      <label><input type="radio" name="radio" value="idadd">Office</label>
+	  	    	</div>
+	  	    </div>
+	  	    <div class="form-group button">        
+		        <div class="col-sm-offset-4 col-sm-6">
+		         	<a href="onlinepayment.html"> <button type="button" class="btn btn-primary" >Submit</button> </a> 
+		        </div>
+		     </div>
+		</form>	
+	</div>
+
+
+	<div class="footer">
+		<div class="col-sm-10 policy">
+			<a href="termservice.html">Terms of Service</a>
+			<a href="insurance.html">Insurance Policy  </a>
+			<a href="privacy.html">Privacy Policy  </a>
+			<div class="copy">
+   			 <p>Copyright &copy; 2017 <a href="admin.html">G7 Company. All rights reserved.</a></p>
+  			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
