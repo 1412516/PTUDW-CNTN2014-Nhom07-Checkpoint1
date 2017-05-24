@@ -5,9 +5,8 @@
 <link rel="icon" href="images/logo.png">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-3.2.0.min.js"></script>
-<script src="js/jquery-migrate-3.0.0.min.js"></script>
-<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/jquery.min.js"></script>
+
 <!-- Custom Theme files -->
 <!--theme style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -24,8 +23,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/memenu.js"></script>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>	
 <!-- /start menu -->
-<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
-<!-- the jScrollPane script -->
+
 <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
 		<script type="text/javascript" id="sourcecode">
 			$(function()
@@ -34,9 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		</script>
 <!-- //the jScrollPane script -->
-<!-- Social buttons -->
- <script src="https://apis.google.com/js/platform.js" async defer></script>
- <script type="text/javascript" src="js/footerSocialButtons.js"></script>
+
 </head>
 <body> 
 <!--header-->
@@ -62,10 +58,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col1 me-one">
 									<h4>Pipe type</h4>
 									<ul>
-										<li><a href="product.html">Copper Pipes (Metal)</a></li>
-										<li><a href="product.html">Galvanized Steel (Metal)</a></li>
-										<li><a href="product.html">PVC Pipes (Plastic)</a></li>
-										<li><a href="product.html">CPVC Pipes (Plastic)</a></li>
+										<li><a href="copper.html">Copper Pipes (Metal)</a></li>
+										<li><a href="galvanized.html">Galvanized Steel (Metal)</a></li>
+										<li><a href="pvc.html">PVC Pipes (Plastic)</a></li>
+										<li><a href="cpvc.html">CPVC Pipes (Plastic)</a></li>
 									</ul>	
 								</div>
 								<div class="col1 me-one">
@@ -85,11 +81,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					</li>
 					<li class="grid"><a href="contact.html">Contact</a></li>
-					<li class="grid"><a href="login.html">Login</a></li>
-					<li class="grid"><a href="admin.html">Admin</a></li>					
+					<li class="grid"><a href="login.html">Login</a></li>					
 				</ul>
 				<div class="clearfix"> </div>
 			 </div>
+			
+				<form action="/search" method="GET" class="navbar-form navbar-left" enctype="application/x-www-form-urlencoded">
+				     <div class="input-group">
+				        <input type="text" name ="txtSearch" class="form-control" placeholder="Search: price, material...">
+				        <div class="input-group-btn">
+				          <input class="btn btn-default" type="submit" value="Search">
+				            <i class="glyphicon glyphicon-search"></i>
+				        </div>
+				      </div>
+				    </form>
+		
+
 			 <!---->
 			 <div class="cart box_1">
 				 <a href="cart.html">
@@ -114,10 +121,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 </ol>
 			<h2>Our Products</h2>			
 		 <div class="col-md-9 product-model-sec">
+
 					 <a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product1.png" class="img-responsive" alt="">
+							<img src="images/product2.png" class="img-responsive" alt="">
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -126,11 +134,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>
+								<h4>Pump #2</h4>								
+								<span class="item_price">$500.00</span>
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
+								  <p class="pric1"><del>$568.00</del></p>
 						          <p class="disc">[12% Off]</p>
+						          <p>PVC</p>
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -143,7 +152,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product2.png" class="img-responsive" alt=""/>
+							<img src="images/product11.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -153,10 +162,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
 								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<span class="item_price">$400.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$444.00</del></p>
+						          <p class="disc">[10% Off]</p>
+						          <p>Copper</p>
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -168,7 +178,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product3.png" class="img-responsive" alt=""/>
+							<img src="images/product12.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -177,11 +187,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>	</a>					
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pipe #3</h4>								
+								<span class="item_price">$800.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$889.00</del></p>
+						          <p class="disc">[10% Off]</p>
+						          <p>CPVC</p>
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -193,7 +204,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product4.png" class="img-responsive" alt=""/>
+							<img src="images/product13.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -202,11 +213,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pipe #4</h4>								
+								<span class="item_price">$900.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$1,200.00</del></p>
+						          <p class="disc">[15% Off]</p>
+						          <p>CPVC</p>
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -227,11 +239,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pump #5</h4>								
+								<span class="item_price">$1,200.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$1,333.00</del></p>
+						          <p class="disc">[10% Off]</p>
+						          <p>PVC</p>
+
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -243,7 +257,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product6.png" class="img-responsive" alt=""/>
+							<img src="images/product14.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -252,11 +266,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pump #6</h4>								
+								<span class="item_price">$850.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
+								  <p class="pric1"><del>$966.00</del></p>
 						          <p class="disc">[12% Off]</p>
+						          <p>Copper</p>
+
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -267,7 +283,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product7.png" class="img-responsive" alt=""/>
+							<img src="images/product15.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -276,11 +292,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pump #7</h4>								
+								<span class="item_price">$950.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$1,000.00</del></p>
+						          <p class="disc">[5% Off]</p>
+						          <p>Copper</p>
+
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -291,7 +309,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product8.png" class="img-responsive" alt=""/>
+							<img src="images/product16.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -300,11 +318,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pipe #8</h4>								
+								<span class="item_price">$750.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$833.00</del></p>
+						          <p class="disc">[10% Off]</p>
+						          <p>Galvanized Steel</p>
+
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -315,7 +335,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product9.png" class="img-responsive" alt=""/>
+							<img src="images/product17.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -324,11 +344,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pump #9</h4>								
+								<span class="item_price">$900.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$947.00</del></p>
+						          <p class="disc">[5% Off]</p>
+						          <p>PVC</p>
+
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -339,7 +361,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product10.png" class="img-responsive" alt=""/>
+							<img src="images/product18.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -348,11 +370,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pump #10</h4>								
+								<span class="item_price">$1,500.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$2,000.00</del></p>
+						          <p class="disc">[15% Off]</p>
+						          <p>Galvanized Steel</p>
+
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -363,7 +387,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product11.png" class="img-responsive" alt=""/>
+							<img src="images/product19.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -372,11 +396,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pump #11</h4>								
+								<span class="item_price">$2000.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$2,222.00</del></p>
+						          <p class="disc">[10% Off]</p>
+						          <p>PVC</p>
+
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -387,7 +413,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="single.html"><div class="product-grid">
 						<div class="more-product"><span> </span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="images/product12.png" class="img-responsive" alt=""/>
+							<img src="images/product20.png" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Quick View</button>
@@ -396,11 +422,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust prt_name">
-								<h4>Pipe #1</h4>								
-								<span class="item_price">$187.95</span>	
+								<h4>Pipe #12</h4>								
+								<span class="item_price">$1,800.00</span>	
 								<div class="ofr">
-								  <p class="pric1"><del>$280</del></p>
-						          <p class="disc">[12% Off]</p>
+								  <p class="pric1"><del>$2,400.00</del></p>
+						          <p class="disc">[15% Off]</p>
+						          <p>CPVC</p>
+
 								</div>
 								<input type="text" class="item_quantity" value="1" />
 								<input type="button" class="item_add items" value="ADD">
@@ -420,10 +448,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="clearfix"> </div>
 							  </ul>
 							 <div class="single-bottom">						
-									<a href="#"><p>Copper</p></a>
-									<a href="#"><p>Galvanized Steel</p></a>
-									<a href="#"><p>PVC</p></a>
-									<a href="#"><p>CPVC</p></a>
+									<a href="copper.html"><p>Copper</p></a>
+									<a href="galvanized.html"><p>Galvanized Steel</p></a>
+									<a href="pvc.html"><p>PVC</p></a>
+									<a href="cpvc.html"><p>CPVC</p></a>
 						     </div>
 					      </div>						  
 						  <div class="tab2">
@@ -489,13 +517,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <h4><span class="glyphicon glyphicon-minus" aria-hidden="true"></span>DISCOUNTS</h4>
 					 <div class="row row1 scroll-pane">
 						 <div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Upto - 10% (20)</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>Upto - 10% (5)</label>
 						 </div>
 						 <div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>40% - 50% (5)</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>30% - 20% (7)</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>10% - 5% (2)</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Other(50)</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>40% - 50% (0)</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>30% - 20% (0)</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>10% - 5% (7)</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Other(0)</label>
 						 </div>
 					 </div>
 				 </section>  				 
@@ -523,7 +551,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								}
 					 });
 					$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-
 					});//]]> 
 					</script>
 					 <!---->
@@ -601,7 +628,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <p>© 2017 Group 7 Shopping Site. All Rights Reserved | Template <b>Lighting</b> designed by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 		 </div>
 		 <div class="social">							
-	
+				<a href="#"><i class="facebook"></i></a>
+				<a href="#"><i class="twitter"></i></a>
+				<a href="#"><i class="dribble"></i></a>	
+				<a href="#"><i class="google"></i></a>	
+				<a href="#"><i class="youtube"></i></a>	
 		 </div>
 		 <div class="clearfix"></div>
 	 </div>
@@ -609,3 +640,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

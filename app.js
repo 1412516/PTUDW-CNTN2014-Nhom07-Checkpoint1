@@ -23,23 +23,133 @@ var config = {
   idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
 };
 
+var urlencodedParser = bodyParser.urlencoded({extended: false});
+
 const pool = new pg.Pool(config);
 
-app.get('/',function(req,res){
-	res.render('index');
+app.get('/index.html',urlencodedParser,function(req,res){
+		if(!req.query.txtSearch){
+		pool.connect(function(err, client, done) {
+		  if(err) {
+		    return console.error('error fetching client from pool', err);
+		  }
+		  //use the client for executing the query
+		  client.query("SELECT * FROM products WHERE status ='hot'", function(err, result) {
+		    //call `done(err)` to release the client back to the pool (or destroy it if there is an error)
+		    done(err);
+
+		    if(err) {
+		      return console.error('error running query', err);
+		    }
+		    res.render('index',{list_hot:result});
+		 	});
+		 });
+	} else{
+		pool.connect(function(err, client, done) {
+		  if(err) {
+		    return console.error('error fetching client from pool', err);
+		  }
+
+		  var txt = req.query.txtSearch;
+		  //use the client for executing the query
+		  client.query("SELECT * FROM products WHERE type LIKE '%"+txt+"%' OR material LIKE '%"+txt+"%'", function(err, result) {
+		    //call `done(err)` to release the client back to the pool (or destroy it if there is an error)
+		    done(err);
+
+		    if(err) {
+		      return console.error('error running query', err);
+		    }
+		    console.log(txt);
+		    res.render('search',{list_search:result});
+		   
+		    //res.send("fine!!!");
+		 	});
+		 });
+	}
 });
 
-app.get('/index.html',function(req,res){
-	res.render('index');
+app.get('/copper.html',function(req,res){
+	pool.connect(function(err, client, done) {
+		  if(err) {
+		    return console.error('error fetching client from pool', err);
+		  }
+
+		  var txt = req.query.txtSearch;
+		  //use the client for executing the query
+		  client.query("SELECT * FROM products WHERE material ='Copper'", function(err, result) {
+		    //call `done(err)` to release the client back to the pool (or destroy it if there is an error)
+		    done(err);
+
+		    if(err) {
+		      return console.error('error running query', err);
+		    }
+		    res.render('copper',{list_copper:result});
+		   
+		    //res.send("fine!!!");
+		 	});
+		 });
 });
+
+app.get('/galvanized.html',function(req,res){
+	res.render('galvanized');
+});
+
+app.get('/pvc.html',function(req,res){
+	res.render('pvc');
+});
+
+app.get('/cpvc.html',function(req,res){
+	res.render('cpvc');
+});
+
+app.get('/search',function(req,res){
+	pool.connect(function(err, client, done) {
+		  if(err) {
+		    return console.error('error fetching client from pool', err);
+		  }
+
+		  var txt = req.query.txtSearch;
+		  //use the client for executing the query
+		  client.query("SELECT * FROM products WHERE type LIKE '%"+txt+"%' OR material LIKE '%"+txt+"%'", function(err, result) {
+		    //call `done(err)` to release the client back to the pool (or destroy it if there is an error)
+		    done(err);
+
+		    if(err) {
+		      return console.error('error running query', err);
+		    }
+		    res.render('search',{list_search:result});
+		   
+		    //res.send("fine!!!");
+		 	});
+		 });
+});
+
 
 app.get('/product.html',function(req,res){
-	res.render('product');
+
+	pool.connect(function(err, client, done) {
+	  if(err) {
+	    return console.error('error fetching client from pool', err);
+	  }
+	  
+	  //use the client for executing the query
+	  client.query("SELECT * FROM products", function(err, result) {
+	    //call `done(err)` to release the client back to the pool (or destroy it if there is an error)
+	    done(err);
+
+	    if(err) {
+	      return console.error('error running query', err);
+	    }
+	    res.render('product',{list:result});
+	  });
+	});
 });
+
 
 app.get('/single.html',function(req,res){
 	res.render('single');
 });
+
 
 app.get('/contact.html',function(req, res){
 	res.render('contact');
@@ -104,6 +214,11 @@ app.get('/soldproduct.html',function(req, res){
 app.get('/market.html',function(req, res){
 	res.render('market');
 });
+
+function escapeRegex(text){
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+};
+
 
 //Server
 app.listen(3000,function(){

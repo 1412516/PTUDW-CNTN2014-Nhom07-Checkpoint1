@@ -95,6 +95,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li class="grid"><a href="admin.html">Admin</a></li>					
 				</ul>				
 			 </div>
+				
+		
+				<form action="/search" method="GET" class="navbar-form navbar-left" enctype="application/x-www-form-urlencoded">
+				     <div class="input-group">
+				        <input type="text" name ="txtSearch" class="form-control" placeholder="Search: price, material...">
+				        <div class="input-group-btn">
+				          <input class="btn btn-default" type="submit" value="Search">
+				            <i class="glyphicon glyphicon-search"></i>
+				        </div>
+				      </div>
+				    </form>
+
 			 <!---->
 			 <div class="cart box_1">
 				 <a href="Cart.html">
@@ -147,114 +159,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="items">
 	 <div class="container">
 		 <div class="items-sec">
+		 	<% list_hot.rows.forEach(function(hp){ %>
 			 <div class="col-md-3 feature-grid">
-				 <div class="feature-image"><a href="product.html"><img src="images/product11.png" alt=""/></a></div>
+				 <div class="feature-image"><a href="product.html"><img src="images/<%= hp.image%>" alt=""/></a></div>
 					 <div class="arrival-info">
-						 <h4>Pipe #N</h4>
-						 <p>$12000</p>
-						 <span class="pric1"><del>$18000</del></span>
-						 <span class="disc">[12% Off]</span>
+						 <h4><%= hp.type%> #<%= hp.id%></h4>
+						 <p><%= hp.price%></p>
+						 <span class="pric1"><del><%= hp.priceorigin%></del><span class="disc"> [<%= hp.discount%> + Off]</span></span>
+						  <p><%= hp.material%></p>
 					 </div>
+					 <br>
 					 <div class="viw">
 						<a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
 					 </div>
 				  </a>
 			 </div>
-			 <div class="col-md-3 feature-grid">
-				 <div class="feature-image"><a href="product.html"><img src="images/product12.png" alt=""/></a></div>
-					 <div class="arrival-info">
-						 <h4>Pipe #N</h4>
-						 <p>$10000</p>
-						 <span class="pric1"><del>$14000</del></span>
-						 <span class="disc">[14% Off]</span>
-					 </div>
-					 <div class="viw">
-						<a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-					 </div>
-				  </a>
-			 </div>
-			 <div class="col-md-3 feature-grid">
-				 <div class="feature-image"><a href="product.html"><img src="images/product13.png" alt=""/></a></div>
-					 <div class="arrival-info">
-						 <h4>Pipe #N</h4>
-						 <p>$8500</p>
-						 <span class="pric1"><del>$9500</del></span>
-						 <span class="disc">[10% Off]</span>
-					 </div>
-					 <div class="viw">
-						<a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-					 </div>
-				  </a>
-			 </div>
-			 <div class="col-md-3 feature-grid">
-				 <div class="feature-image"><a href="product.html"><img src="images/product14.png" alt=""/></a></div>
-					 <div class="arrival-info">
-						 <h4>Pipe #N</h4>
-						 <p>$12000</p>
-						 <span class="pric1"><del>$18000</del></span>
-						 <span class="disc">[12% Off]</span>
-					 </div>
-					 <div class="viw">
-						<a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-					 </div>
-				  </a>
-			 </div>
-			 <div class="clearfix"></div>
-		 </div>
-		 <div class="items-sec btm-sec">
-			 <div class="col-md-3 feature-grid">
-				 <div class="feature-image"><a href="product.html"><img src="images/product15.png" alt=""/></a></div>
-					 <div class="arrival-info">
-						 <h4>Pipe #N</h4>
-						 <p>$500</p>
-						 <span class="pric1"><del>$650</del></span>
-						 <span class="disc">[8% Off]</span>
-					 </div>
-					 <div class="viw">
-						<a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-					 </div>
-				  </a>
-			 </div>
-			 <div class="col-md-3 feature-grid">
-				 <div class="feature-image"><a href="product.html"><img src="images/product16.png" alt=""/></a></div>
-					 <div class="arrival-info">
-						 <h4>Pipe #N</h4>
-						 <p>$400</p>
-						 <span class="pric1"><del>$750</del></span>
-						 <span class="disc">[12% Off]</span>
-					 </div>
-					 <div class="viw">
-						<a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-					 </div>
-				  </a>
-			 </div>
-			 <div class="col-md-3 feature-grid">
-				 <div class="feature-image"><a href="product.html"><img src="images/product17.png" alt=""/></a></div>
-					 <div class="arrival-info">
-						 <h4>Pipe #N</h4>
-						 <p>$800</p>
-						 <span class="pric1"><del>$1200</del></span>
-						 <span class="disc">[12% Off]</span>
-					 </div>
-					 <div class="viw">
-						<a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-					 </div>
-				  </a>
-			 </div>
-			 <div class="col-md-3 feature-grid">
-				 <div class="feature-image"><a href="product.html"><img src="images/product18.png" alt=""/></a></div>	
-					 <div class="arrival-info">
-						 <h4>Pipe #N</h4>
-						 <p>$600</p>
-						 <span class="pric1"><del>$1200</del></span>
-						 <span class="disc">[50% Off]</span>
-					 </div>
-					 <div class="viw">
-						<a href="product.html"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>View</a>
-					 </div>
-				  </a>
-			 </div>
-			 <div class="clearfix"></div>
+			 <%	}); %>
+			<div class="clearfix"></div>
 		 </div>
 	 </div>
 </div>
